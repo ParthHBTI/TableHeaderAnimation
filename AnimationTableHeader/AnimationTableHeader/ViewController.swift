@@ -61,7 +61,7 @@ class ViewController: UIViewController, UITableViewDelegate, UIScrollViewDelegat
         
 
         if tableView.contentOffset.y < bottomLayout.constant &&  headerHeight.constant < 120  {
-            bottomLayout.constant = bottomLayout.constant - 1.0
+          //  bottomLayout.constant = bottomLayout.constant - 1.0
             headerHeight.constant = headerHeight.constant + 2.0
             
             //img1Leading.constant = img1Leading.constant - 0.5
@@ -76,13 +76,12 @@ class ViewController: UIViewController, UITableViewDelegate, UIScrollViewDelegat
             
             lbtWidth.constant = lbtWidth.constant + 0.2
             lbtHeight.constant = lbtHeight.constant + 0.2
-            print("tableConentoffset is \(tableView.contentOffset.y)")
-            print("tableHeader height is \(headerHeight.constant)")
-        print("bottomlayout is if  \( bottomLayout.constant)")
+
             
-        } else if bottomLayout.constant < 70   && headerHeight.constant > 50 {
-            bottomLayout.constant = bottomLayout.constant + 1.0
+        } else if  headerHeight.constant > 50  &&  headerHeight.constant < 129 {
+          //  bottomLayout.constant = bottomLayout.constant + 1.0
             headerHeight.constant = headerHeight.constant - 2.0
+            //bottomLayout.constant < 70   &&
             
             //img1Leading.constant = img1Leading.constant + 0.5
             img1Width.constant = img1Width.constant - 0.2
@@ -97,15 +96,13 @@ class ViewController: UIViewController, UITableViewDelegate, UIScrollViewDelegat
             lbtWidth.constant = lbtWidth.constant - 0.2
             lbtHeight.constant = lbtHeight.constant - 0.2
             
-            print("tableConentoffset is \(tableView.contentOffset.y)")
-            print("tableHeader height is \(headerHeight.constant)")
-            print("bottom lyaout is else \(bottomLayout.constant)")
+//            print("tableHeader height is \(headerHeight.constant)")
+//            print("bottom lyaout is else \(bottomLayout.constant)")
         }
         
-        tableHeader.setNeedsLayout()
-        tableHeader.layoutIfNeeded()
-        tableView.setNeedsLayout()
-        tableView.layoutIfNeeded()
+        print("tableConentoffset is \(tableView.frame.origin.y)")
+
+        
          }
     
   

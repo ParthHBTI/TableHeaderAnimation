@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -246,9 +246,10 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="Cg8-ua-RWS"/>
-                                        <exclude reference="5DT-qy-Z5n"/>
-                                        <exclude reference="83R-zh-t6O"/>
-                                        <exclude reference="Abl-c3-7ge"/>
+                                        <exclude reference="2Ok-ZE-RR9"/>
+                                        <exclude reference="HMR-6m-5w2"/>
+                                        <exclude reference="RgM-zP-Qze"/>
+                                        <exclude reference="b6v-FT-hzj"/>
                                         <exclude reference="1o9-eD-ZLg"/>
                                         <exclude reference="cYV-y3-jYz"/>
                                         <exclude reference="m7r-ay-TvH"/>
@@ -263,10 +264,9 @@
                                         <exclude reference="dW4-oQ-xYM"/>
                                         <exclude reference="gB4-qo-aYz"/>
                                         <exclude reference="hqE-Mg-hlo"/>
-                                        <exclude reference="2Ok-ZE-RR9"/>
-                                        <exclude reference="HMR-6m-5w2"/>
-                                        <exclude reference="RgM-zP-Qze"/>
-                                        <exclude reference="b6v-FT-hzj"/>
+                                        <exclude reference="5DT-qy-Z5n"/>
+                                        <exclude reference="83R-zh-t6O"/>
+                                        <exclude reference="Abl-c3-7ge"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -279,9 +279,10 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="Cg8-ua-RWS"/>
-                                        <include reference="5DT-qy-Z5n"/>
-                                        <include reference="83R-zh-t6O"/>
-                                        <include reference="Abl-c3-7ge"/>
+                                        <include reference="2Ok-ZE-RR9"/>
+                                        <include reference="HMR-6m-5w2"/>
+                                        <include reference="RgM-zP-Qze"/>
+                                        <include reference="b6v-FT-hzj"/>
                                         <include reference="1o9-eD-ZLg"/>
                                         <include reference="cYV-y3-jYz"/>
                                         <include reference="m7r-ay-TvH"/>
@@ -296,10 +297,9 @@
                                         <include reference="dW4-oQ-xYM"/>
                                         <include reference="gB4-qo-aYz"/>
                                         <include reference="hqE-Mg-hlo"/>
-                                        <include reference="2Ok-ZE-RR9"/>
-                                        <include reference="HMR-6m-5w2"/>
-                                        <include reference="RgM-zP-Qze"/>
-                                        <include reference="b6v-FT-hzj"/>
+                                        <include reference="5DT-qy-Z5n"/>
+                                        <include reference="83R-zh-t6O"/>
+                                        <include reference="Abl-c3-7ge"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -351,7 +351,7 @@
                                 <include reference="JPv-Bz-wEb"/>
                                 <include reference="RdC-5e-Xub"/>
                                 <include reference="jpy-7b-e4A"/>
-                                <include reference="o49-xx-oRu"/>
+                                <exclude reference="o49-xx-oRu"/>
                             </mask>
                         </variation>
                     </view>
