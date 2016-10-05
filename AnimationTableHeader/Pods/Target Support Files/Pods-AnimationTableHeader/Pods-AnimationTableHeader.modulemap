@@ -1,0 +1,6 @@
+framework module Pods_AnimationTableHeader {
+  umbrella header "Pods-AnimationTableHeader-umbrella.h"
+
+  export *
+  module * { export * }
+}
