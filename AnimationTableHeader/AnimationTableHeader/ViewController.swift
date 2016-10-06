@@ -58,6 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate, UIScrollViewDelegat
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
+        
        
         if tableView.contentOffset.y < bottomLayout.constant &&  headerHeight.constant < 120  {
             if tableView.frame.origin.y < 118 {
@@ -95,5 +96,6 @@ class ViewController: UIViewController, UITableViewDelegate, UIScrollViewDelegat
             print("else \(headerHeight.constant)")
         }
         print("tableConentoffset is \(tableView.frame.origin.y)")
+        tableHeader.sizeToFit()
     }
 }
