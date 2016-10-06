@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -34,14 +34,29 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYZ-A8-h6c">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="75" id="vEU-Uo-pGs"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0787162696" green="0.2828120194" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="vEU-Uo-pGs"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="vEU-Uo-pGs"/>
+                                                        </mask>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="gYZ-A8-h6c" firstAttribute="centerX" secondItem="qde-j4-yhL" secondAttribute="centerX" id="02M-d1-FJV"/>
-                                                <constraint firstItem="gYZ-A8-h6c" firstAttribute="width" secondItem="qde-j4-yhL" secondAttribute="height" multiplier="49:16" id="EtG-ha-Aiw"/>
+                                                <constraint firstItem="gYZ-A8-h6c" firstAttribute="width" secondItem="qde-j4-yhL" secondAttribute="height" multiplier="49:16" id="EtG-ha-Aiw">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="105.3125"/>
+                                                </constraint>
                                                 <constraint firstItem="gYZ-A8-h6c" firstAttribute="centerY" secondItem="qde-j4-yhL" secondAttribute="centerY" id="Qgu-IR-xuG"/>
                                             </constraints>
                                             <variation key="default">
@@ -65,7 +80,7 @@
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -377,7 +392,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image-1" width="85" height="85"/>
-        <image name="Image-2" width="68" height="68"/>
+        <image name="Image-1" width="256" height="256"/>
+        <image name="Image-2" width="204" height="204"/>
     </resources>
 </document>

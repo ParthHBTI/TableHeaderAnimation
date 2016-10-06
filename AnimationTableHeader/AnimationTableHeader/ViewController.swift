@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate, UIScrollViewDelegat
     @IBOutlet weak var tableHeader: UIView!
     @IBOutlet weak var tableView: UITableView!
      var fixed: Bool = true
-  
+  var limit = 48.0
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UIScrollViewDelegat
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 10
         
         
     }
@@ -58,53 +58,42 @@ class ViewController: UIViewController, UITableViewDelegate, UIScrollViewDelegat
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        
-
+       
         if tableView.contentOffset.y < bottomLayout.constant &&  headerHeight.constant < 120  {
-          //  bottomLayout.constant = bottomLayout.constant - 1.0
-            headerHeight.constant = headerHeight.constant + 2.0
+            if tableView.frame.origin.y < 118 {
+            //bottomLayout.constant = bottomLayout.constant - 1.0
+            headerHeight.constant = headerHeight.constant + 5.0
             
-            //img1Leading.constant = img1Leading.constant - 0.5
             img1Width.constant = img1Width.constant + 0.2
             img1Height.constant = img1Height.constant + 0.2
             img1HorizontalSpace.constant = img1HorizontalSpace.constant + 1.5
             
-            //img2Trailing.constant = img2Trailing.constant - 0.5
             img2Width.constant = img2Width.constant + 0.2
             img2Height.constant = img2Height.constant + 0.2
             img2HorizontalSpace.constant = img1HorizontalSpace.constant + 1.5
             
             lbtWidth.constant = lbtWidth.constant + 0.2
             lbtHeight.constant = lbtHeight.constant + 0.2
-
+            }
+            print("if \(headerHeight.constant)")
+             print("if \(tableView.contentOffset.y)")
+             print("if \(bottomLayout.constant)")
+        } else if tableView.frame.origin.y > 48.0 {
+            //bottomLayout.constant = bottomLayout.constant + 1.0
+            headerHeight.constant = headerHeight.constant - 5.0
             
-        } else if  headerHeight.constant > 50  &&  headerHeight.constant < 129 {
-          //  bottomLayout.constant = bottomLayout.constant + 1.0
-            headerHeight.constant = headerHeight.constant - 2.0
-            //bottomLayout.constant < 70   &&
-            
-            //img1Leading.constant = img1Leading.constant + 0.5
             img1Width.constant = img1Width.constant - 0.2
             img1Height.constant = img1Height.constant - 0.2
             img1HorizontalSpace.constant = img1HorizontalSpace.constant - 1.5
             
-            //img2Trailing.constant = img2Trailing.constant + 0.5
             img2Width.constant = img2Width.constant - 0.2
             img2Height.constant = img2Height.constant - 0.2
             img2HorizontalSpace.constant = img1HorizontalSpace.constant - 1.5
             
             lbtWidth.constant = lbtWidth.constant - 0.2
             lbtHeight.constant = lbtHeight.constant - 0.2
-            
-//            print("tableHeader height is \(headerHeight.constant)")
-//            print("bottom lyaout is else \(bottomLayout.constant)")
+            print("else \(headerHeight.constant)")
         }
-        
         print("tableConentoffset is \(tableView.frame.origin.y)")
-
-        
-         }
-    
-  
-
+    }
 }
