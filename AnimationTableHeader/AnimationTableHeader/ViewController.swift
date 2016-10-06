@@ -61,16 +61,16 @@ class ViewController: UIViewController, UITableViewDelegate, UIScrollViewDelegat
        
         if tableView.contentOffset.y < bottomLayout.constant &&  headerHeight.constant < 120  {
             if tableView.frame.origin.y < 118 {
-            //bottomLayout.constant = bottomLayout.constant - 1.0
+            bottomLayout.constant = bottomLayout.constant - 1.0
             headerHeight.constant = headerHeight.constant + 5.0
             
             img1Width.constant = img1Width.constant + 0.2
             img1Height.constant = img1Height.constant + 0.2
-            img1HorizontalSpace.constant = img1HorizontalSpace.constant + 1.5
+            img1HorizontalSpace.constant = img1HorizontalSpace.constant + 5.0
             
             img2Width.constant = img2Width.constant + 0.2
             img2Height.constant = img2Height.constant + 0.2
-            img2HorizontalSpace.constant = img1HorizontalSpace.constant + 1.5
+            img2HorizontalSpace.constant = img1HorizontalSpace.constant + 5.0
             
             lbtWidth.constant = lbtWidth.constant + 0.2
             lbtHeight.constant = lbtHeight.constant + 0.2
@@ -78,17 +78,17 @@ class ViewController: UIViewController, UITableViewDelegate, UIScrollViewDelegat
             print("if \(headerHeight.constant)")
              print("if \(tableView.contentOffset.y)")
              print("if \(bottomLayout.constant)")
-        } else if tableView.frame.origin.y > 48.0 {
-            //bottomLayout.constant = bottomLayout.constant + 1.0
+        } else if tableView.frame.origin.y > 66.0 {
+            bottomLayout.constant = bottomLayout.constant + 1.0
             headerHeight.constant = headerHeight.constant - 5.0
             
             img1Width.constant = img1Width.constant - 0.2
             img1Height.constant = img1Height.constant - 0.2
-            img1HorizontalSpace.constant = img1HorizontalSpace.constant - 1.5
+            img1HorizontalSpace.constant = img1HorizontalSpace.constant - 5.0
             
             img2Width.constant = img2Width.constant - 0.2
             img2Height.constant = img2Height.constant - 0.2
-            img2HorizontalSpace.constant = img1HorizontalSpace.constant - 1.5
+            img2HorizontalSpace.constant = img1HorizontalSpace.constant - 5.0
             
             lbtWidth.constant = lbtWidth.constant - 0.2
             lbtHeight.constant = lbtHeight.constant - 0.2
